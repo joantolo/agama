@@ -6,7 +6,7 @@ After=network-online.target
 # before starting the Agama servers so they use the new packages
 Before=agama-web-server.service
 Before=agama.service
-Before=x11-autologin.service
+Before=gnome-kiosk-autologin.service
 # before interactive password services
 Before=live-password-dialog.service
 Before=live-password-systemd.service
