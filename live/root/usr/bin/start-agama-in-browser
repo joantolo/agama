@@ -1,0 +1,12 @@
+#! /bin/sh
+
+# Start a browser to connect to Agama's web user interface skipping the authentication.
+
+TOKEN_FILE=/run/agama/token
+TOKEN=$(cat $TOKEN_FILE)
+
+#Using webkit2gtk4
+#/usr/libexec/libwebkitgtk-6_0-0/MiniBrowser --full-screen "http://localhost/login?token=$TOKEN"
+
+#Using webkit2gtk3
+/usr/libexec/libwebkit2gtk-4_1-0/MiniBrowser --full-screen "http://localhost/login?token=$TOKEN"

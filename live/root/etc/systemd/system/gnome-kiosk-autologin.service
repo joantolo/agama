@@ -1,5 +1,5 @@
 [Unit]
-Description=X11 session
+Description=GNOME kiosk session
 After=graphical.target systemd-user-sessions.service
 
 [Service]
@@ -7,7 +7,6 @@ User=root
 WorkingDirectory=~
 
 PAMName=login
-Environment=XDG_SESSION_TYPE=x11
 TTYPath=/dev/tty7
 StandardInput=tty
 UnsetEnvironment=TERM
@@ -17,7 +16,7 @@ UtmpMode=user
 
 StandardOutput=journal
 ExecStartPre=/usr/bin/chvt 7
-ExecStart=/usr/bin/startx -- vt7 -keeptty -verbose 3 -logfile /dev/null
+ExecStart=/usr/bin/gnome-session --session=org.gnome.Kiosk.Agama
 Restart=no
 
 [Install]

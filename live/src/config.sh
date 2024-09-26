@@ -55,7 +55,7 @@ systemctl enable live-password-iso.service
 systemctl enable live-password-random.service
 systemctl enable live-password-systemd.service
 systemctl enable setup-systemd-proxy-env.path
-systemctl enable x11-autologin.service
+systemctl enable gnome-kiosk-autologin.service
 systemctl enable spice-vdagentd.service
 systemctl enable zramswap
 
@@ -69,6 +69,10 @@ systemctl disable snapper-timeline.timer
 # disable unused services
 systemctl disable YaST2-Firstboot.service
 systemctl disable YaST2-Second-Stage.service
+
+# Set backgound color (before browser appears)
+gsettings set org.gnome.desktop.background primary-color '#ffffff'
+gsettings set org.gnome.desktop.background secondary-color '#ffffff'
 
 ### setup dracut for live system
 label=${kiwi_install_volid:-$kiwi_iname}
