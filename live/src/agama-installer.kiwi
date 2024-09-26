@@ -133,7 +133,6 @@
         <package name="dracut-kiwi-live"/>
         <package name="blog" arch="s390x" />
         <package name="libblogger2" arch="s390x" />
-        <package name="xauth"/>
         <package name="MozillaFirefox"/>
         <package name="libpwquality-tools"/>
         <package name="NetworkManager"/>
@@ -146,11 +145,8 @@
         <package name="rubygem(agama-yast)"/>
         <package name="rubygem(byebug)"/>
         <package name="microos-tools"/>
-        <package name="icewm-lite"/>
-        <package name="xinit"/>
-        <package name="xorg-x11-server"/>
-        <package name="xorg-x11-fonts-core"/>
-        <package name="xf86-input-libinput" />
+        <package name="gnome-session-core"/>
+        <package name="mutter"/>
         <package name="psmisc"/>
         <package name="joe"/>
         <package name="checkmedia"/>
