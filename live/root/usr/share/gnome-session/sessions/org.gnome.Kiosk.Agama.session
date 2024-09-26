@@ -1,0 +1,3 @@
+[GNOME Session]
+Name=GNOME Kiosk displaying Agama with Firefox
+RequiredComponents=org.gnome.Kiosk.Wayland;org.opensuse.Agama.Firefox;

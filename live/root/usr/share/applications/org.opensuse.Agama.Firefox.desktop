@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Agama Firefox
+Type=Application
+Exec=/usr/bin/start-agama-in-browser
+X-GNOME-HiddenUnderSystemd=true
