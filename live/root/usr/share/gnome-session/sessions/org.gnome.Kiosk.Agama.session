@@ -1,0 +1,3 @@
+[GNOME Session]
+Name=GNOME Kiosk displaying Agama with WebkitGTK
+RequiredComponents=org.gnome.Kiosk.Wayland;org.opensuse.Agama.WebkitGTK;
