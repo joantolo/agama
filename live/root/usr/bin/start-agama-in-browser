@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+#! /bin/sh
+
 # Start a browser to connect to Agama's web user interface skipping the authentication.
 
 TOKEN_FILE=/run/agama/token

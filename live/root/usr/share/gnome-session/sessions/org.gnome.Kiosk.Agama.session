@@ -1,0 +1,3 @@
+[GNOME Session]
+Name=GNOME compositor displaying Agama with Firefox
+RequiredComponents=org.gnome.Mutter.Wayland;org.opensuse.Agama.Firefox;
